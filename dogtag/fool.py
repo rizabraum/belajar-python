@@ -2,11 +2,15 @@
 
 # Program buka dan tutup pintu berdasarkan input user
 
-perintah = str(input("\nMasukkan perintah (Open/Close): " ))
+nama = str(input("\nSiapakah anda? " ))
+nama = nama.title()
+
+perintah = str(input("Masukkan perintah (Open/Close): " ))
 perintah = perintah.lower()
 
 if perintah == ("open"):
-    print("Pintu berhasil dibuka, silahkan masuk...\n")
+    print(f"Pintu berhasil dibuka, Hallo {nama} silahkan masuk...\n")
 elif perintah == ("close"):
-    print("Yah sayang sekali, saya kira anda ingin masuk...\n")
-else: print("input tidak valid\n")
+    print(f"Yah sayang sekali {nama}, saya kira anda ingin masuk...\n")
+else: 
+    print(f"Maaf {nama}, input anda tidak valid\n")
